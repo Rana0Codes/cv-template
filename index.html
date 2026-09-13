@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Template — Professional CV & Biodata Builder</title>
+  <meta name="description" content="Unified professional CV and Biodata builder with 5 modular templates and vector PDF export.">
+  
+  <!-- Favicon & Brand Assets -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Typography: Inter, Plus Jakarta Sans & Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core App Stylesheets -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/editor.css">
+  <link rel="stylesheet" href="css/preview.css">
+  
+  <!-- Modular Template Stylesheets -->
+  <link rel="stylesheet" href="css/templates/template-1.css">
+  <link rel="stylesheet" href="css/templates/template-2.css">
+  <link rel="stylesheet" href="css/templates/template-3.css">
+  <link rel="stylesheet" href="css/templates/template-4.css">
+  <link rel="stylesheet" href="css/templates/template-5.css">
+
+  <!-- Master Print Stylesheet -->
+  <link rel="stylesheet" href="css/print.css">
+</head>
+<body>
+
+  <!-- Top App Navigation Bar -->
+  <header class="app-header">
+    <div class="header-brand">
+      <img src="assets/logo.jpg" alt="CV Template Logo" class="brand-logo-img">
+      <div class="brand-text-block">
+        <div class="brand-title-row">
+          <span class="brand-title">CV Template</span>
+          <span class="brand-pro-badge">PRO BUILDER</span>
+        </div>
+        <span class="brand-subtitle">ATS-Optimized • 5 Modular Designs</span>
+      </div>
+    </div>
+
+    <!-- Center Controls: Demo Presets (1. Blank, 2. Tech Demo, 3. Executive Demo) -->
+    <div class="header-center">
+      <div class="preset-segmented-control" role="group" aria-label="Demo Profiles">
+        <button type="button" class="btn-preset-pill active" id="btn-preset-empty" title="Start with a fresh blank resume">
+          <span class="preset-icon">✨</span>
+          <span class="preset-label">Blank</span>
+        </button>
+        <button type="button" class="btn-preset-pill" id="btn-preset-tech" title="Load Demo: Alexander Wright (Tech Architect)">
+          <span class="preset-icon">💻</span>
+          <span class="preset-label">Tech Demo</span>
+        </button>
+        <button type="button" class="btn-preset-pill" id="btn-preset-exec" title="Load Demo: Elena Vance (Operations Director)">
+          <span class="preset-icon">📊</span>
+          <span class="preset-label">Executive Demo</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Actions: Preview & PDF CTA -->
+    <div class="header-actions">
+
+
+      <button type="button" class="btn-action-preview" id="btn-header-preview" title="Open full-screen CV preview">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+        <span>Preview CV</span>
+      </button>
+      <button type="button" class="btn-cta-download" id="btn-download-pdf" title="Download vector-sharp A4 PDF">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Download PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Responsive Tab Bar -->
+  <nav class="mobile-tabs" aria-label="Mobile Navigation">
+    <button type="button" class="mobile-tab-btn active" id="btn-tab-edit">✍ Content Editor</button>
+    <button type="button" class="mobile-tab-btn" id="btn-tab-preview">👁 Preview CV</button>
+  </nav>
+
+  <!-- Dedicated Full-Width Document Authoring Studio -->
+  <main class="editor-main-stage" aria-label="Resume Studio">
+    <div id="form-container"></div>
+  </main>
+
+  <!-- Dedicated Full-Screen On-Demand Preview Modal & Review Workspace -->
+  <div id="cv-preview-modal" class="preview-modal hidden" aria-label="Dedicated Resume Preview" role="dialog" aria-modal="true">
+    <!-- Floating Action Bar -->
+    <div class="preview-modal-toolbar">
+      <div class="modal-toolbar-left">
+        <button type="button" class="btn-back-editor" id="btn-close-preview" title="Return to document editor">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>Back to Editor</span>
+        </button>
+      </div>
+
+      <div class="modal-toolbar-center">
+        <div id="canvas-template-bar"></div>
+        <div id="canvas-style-bar" class="canvas-style-bar"></div>
+      </div>
+
+      <div class="modal-toolbar-right">
+        <div id="zoom-controls-slot"></div>
+        <button type="button" class="btn-cta-download" id="btn-modal-download-pdf" title="Download vector-sharp A4 PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Download PDF</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Desk Workspace Area -->
+    <div class="preview-modal-desk" id="preview-area">
+      <div class="cv-paper-desk-wrapper" id="cv-paper-desk-wrapper">
+        <div class="cv-paper template-1" id="cv-paper"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive ATS Optimization Checklist Modal / Popover -->
+  <div id="ats-checklist-modal" class="ats-modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="ATS Optimization Checklist">
+    <div class="ats-modal-card">
+      <div class="ats-modal-header">
+        <div class="ats-modal-title-group">
+          <div class="ats-modal-badge-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div>
+            <h2 class="ats-modal-title">ATS Readiness Checklist</h2>
+            <p class="ats-modal-subtitle">Optimize your resume content to achieve a 100% recruiter & parser match.</p>
+          </div>
+        </div>
+        <button type="button" class="btn-ats-modal-close" id="btn-ats-modal-close" aria-label="Close ATS Checklist">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="ats-modal-body" id="ats-modal-body">
+        <!-- Injected via form-builder.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

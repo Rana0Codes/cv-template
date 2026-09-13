@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Template 3: Minimalist ATS (Serif, High Density, Single Column)
+   ========================================================================== */
+
+.t3-container {
+  font-family: var(--theme-font, 'Merriweather', Georgia, 'Times New Roman', serif);
+  color: #0f172a;
+  background: #ffffff;
+  padding: 24px 30px;
+  line-height: 1.48;
+  font-size: 9.6pt;
+  width: 100%;
+  min-height: 297mm;
+  box-sizing: border-box;
+}
+
+.t3-container a {
+  color: #0f172a;
+  text-decoration: underline;
+}
+
+/* Header */
+.t3-header {
+  text-align: center;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 10px;
+  margin-bottom: 14px;
+}
+
+.t3-name {
+  font-size: 21pt;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin: 0 0 3px 0;
+  color: #0f172a;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.t3-headline {
+  font-size: 9.6pt;
+  font-style: italic;
+  margin: 0 0 5px 0;
+  color: #475569;
+  font-weight: 500;
+}
+
+.t3-contacts {
+  font-size: 8.6pt;
+  color: #334155;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 8px;
+}
+
+.t3-contacts a,
+.t3-contacts span {
+  white-space: nowrap;
+}
+
+/* Sections */
+.t3-section {
+  margin-bottom: 12px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t3-section:last-child {
+  margin-bottom: 0;
+}
+
+.t3-title {
+  font-size: 10pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-bottom: 1px solid #0f172a;
+  padding-bottom: 2px;
+  margin: 0 0 6px 0;
+  color: #0f172a;
+}
+
+.t3-summary {
+  font-size: 9.2pt;
+  text-align: justify;
+  margin: 0;
+  color: #1e293b;
+  line-height: 1.55;
+}
+
+/* Entry Rows */
+.t3-entry {
+  margin-bottom: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t3-entry:last-child {
+  margin-bottom: 0;
+}
+
+.t3-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 9.4pt;
+}
+
+.t3-entry-title {
+  color: #0f172a;
+}
+
+.t3-entry-date {
+  font-size: 8.8pt;
+  font-weight: 600;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.t3-score-line {
+  font-size: 8.6pt;
+  font-style: italic;
+  color: #475569;
+  margin: 1px 0 0 0;
+}
+
+/* Bullets */
+.t3-bullets {
+  margin: 3px 0 0 0;
+  padding-left: 18px;
+  font-size: 9pt;
+  color: #334155;
+}
+
+.t3-bullets li {
+  margin-bottom: 2px;
+  line-height: 1.45;
+}
+
+/* Skills & Language Rows */
+.t3-skills-content {
+  font-size: 9pt;
+}
+
+.t3-skill-row {
+  margin: 2px 0;
+  line-height: 1.45;
+  color: #1e293b;
+}
+
+.t3-lang-row {
+  font-size: 9pt;
+  margin: 2px 0;
+  color: #1e293b;
+}

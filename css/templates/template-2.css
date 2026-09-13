@@ -1,0 +1,376 @@
+/* ==========================================================================
+   Template 2: Corporate Executive / Two-Column Sidebar
+   ========================================================================== */
+
+.t2-document {
+  font-family: var(--theme-font, 'Plus Jakarta Sans', Calibri, 'Trebuchet MS', sans-serif);
+  color: #1e293b;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 68mm 1fr;
+  width: 100%;
+  min-height: 297mm;
+  box-sizing: border-box;
+  font-size: 9.2pt;
+  line-height: 1.45;
+}
+
+.t2-document a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.t2-document a:hover {
+  text-decoration: underline;
+}
+
+/* Left Sidebar */
+.t2-sidebar {
+  background-color: #f8fafc;
+  border-right: 1.5px solid #e2e8f0;
+  padding: 22px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-sizing: border-box;
+}
+
+.t2-profile-frame {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.t2-profile-img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 6px;
+  border: 2px solid var(--theme-accent, #0f766e);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: inline-block;
+}
+
+.t2-sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t2-sidebar-title {
+  font-size: 8.8pt;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: var(--theme-accent, #0f766e);
+  border-bottom: 1.5px solid var(--theme-accent, #0f766e);
+  padding-bottom: 3px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.t2-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.t2-icon {
+  color: var(--theme-accent, #0f766e);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.t2-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.t2-contact-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 8.4pt;
+  min-width: 0;
+  word-break: break-word;
+}
+
+.t2-label {
+  font-size: 7.2pt;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.3px;
+}
+
+.t2-contact-text span,
+.t2-contact-text a {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.t2-cat-title {
+  font-size: 8pt;
+  font-weight: 700;
+  color: #334155;
+  margin: 2px 0 3px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.t2-pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.t2-pill {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-size: 7.8pt;
+  font-weight: 600;
+  padding: 1.5px 6px;
+  border-radius: 3px;
+  border: 1px solid #cbd5e1;
+}
+
+.t2-language-list,
+.t2-details-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+}
+
+.t2-language-list li,
+.t2-details-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8.4pt;
+}
+
+.t2-lang-level {
+  font-size: 7.5pt;
+  color: var(--theme-accent, #0f766e);
+  background: #ffffff;
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+}
+
+.t2-detail-label {
+  font-size: 7.8pt;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.t2-detail-val {
+  font-size: 8.2pt;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Right Main Column */
+.t2-main {
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  box-sizing: border-box;
+}
+
+.t2-main-header {
+  margin-bottom: 2px;
+}
+
+.t2-name {
+  font-size: 20pt;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #0f172a;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.t2-role-badge {
+  display: inline-block;
+  background-color: #f0fdfa;
+  color: var(--theme-accent, #0f766e);
+  border: 1px solid var(--theme-accent, #99f6e4);
+  padding: 2px 9px;
+  border-radius: 4px;
+  font-size: 8.5pt;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.t2-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t2-section-title {
+  font-size: 10pt;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--theme-accent, #0f766e);
+  text-transform: uppercase;
+  border-bottom: 1.5px solid var(--theme-accent, #0f766e);
+  padding-bottom: 3px;
+  margin: 0 0 8px 0;
+}
+
+.t2-summary-text {
+  font-size: 9.2pt;
+  color: #334155;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Experience Block */
+.t2-experience-block {
+  background-color: #ffffff;
+  border-left: 3px solid var(--theme-accent, #0f766e);
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 6px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t2-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.t2-exp-title {
+  font-size: 9.5pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.t2-company-name {
+  color: #475569;
+  font-weight: 600;
+}
+
+.t2-exp-tag {
+  font-size: 8pt;
+  font-weight: 600;
+  color: #64748b;
+  background-color: #f1f5f9;
+  padding: 1px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.t2-custom-bullets {
+  list-style-type: disc;
+  padding-left: 16px;
+  margin: 4px 0 0 0;
+}
+
+.t2-custom-bullets li {
+  font-size: 8.7pt;
+  line-height: 1.42;
+  color: #334155;
+  margin-bottom: 2px;
+}
+
+/* Academic Table */
+.t2-table-wrapper {
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.t2-academic-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 8.6pt;
+}
+
+.t2-academic-table th,
+.t2-academic-table td {
+  border: 1px solid #e2e8f0;
+  padding: 5px 8px;
+  text-align: left;
+}
+
+.t2-academic-table th {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  border-bottom: 1.5px solid #cbd5e1;
+}
+
+.t2-academic-table tr:nth-child(even) td {
+  background-color: #fcfdfe;
+}
+
+/* Declaration Block */
+.t2-declaration-block {
+  margin-top: auto;
+  border-top: 1px dashed #cbd5e1;
+  padding-top: 8px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.t2-declaration-text {
+  font-size: 8.2pt;
+  color: #475569;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.t2-sign-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 8.4pt;
+}
+
+.t2-sign-left p {
+  margin: 1px 0;
+  color: #334155;
+}
+
+.t2-sign-right {
+  text-align: center;
+  min-width: 120px;
+}
+
+.t2-name-caps {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 9pt;
+  letter-spacing: 0.5px;
+}
+
+.t2-sig-note {
+  font-size: 7.5pt;
+  color: #64748b;
+  display: block;
+  margin-top: 1px;
+}

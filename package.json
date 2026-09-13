@@ -1,0 +1,40 @@
+{
+  "name": "cv-template",
+  "version": "1.0.0",
+  "description": "Modern, client-side, ATS-optimized CV & Indian Biodata studio with 5 modular layouts and vector-sharp A4 PDF export.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node --check js/app.js js/store.js js/defaults.js js/export/*.js js/templates/*.js js/ui/*.js",
+    "test": "node tests/verify-suite.js",
+    "test:pdf": "node tests/pdf-export.js"
+  },
+  "keywords": [
+    "resume-builder",
+    "cv-generator",
+    "ats-friendly",
+    "biodata-maker",
+    "vanilla-js",
+    "offline-first",
+    "pwa",
+    "pdf-export",
+    "a4-print"
+  ],
+  "author": "Juyel Rana",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/cv-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/cv-template/issues"
+  },
+  "homepage": "https://github.com/username/cv-template#readme",
+  "devDependencies": {
+    "puppeteer-core": "^25.10.0",
+    "vite": "^8.3.0"
+  }
+}
