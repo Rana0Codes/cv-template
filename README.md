@@ -9,6 +9,9 @@ Engineered for **100% ATS compatibility**, seamless responsive ergonomics, and *
 
 ---
 
+[![CI](https://github.com/Rana0Codes/cv-template/actions/workflows/ci.yml/badge.svg)](https://github.com/Rana0Codes/cv-template/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/Rana0Codes/cv-template/actions/workflows/deploy.yml/badge.svg)](https://rana0codes.github.io/cv-template/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-success?style=flat&logo=githubpages&logoColor=white)](https://rana0codes.github.io/cv-template/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/JavaScript-ES%20Modules-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-success.svg)](package.json)
