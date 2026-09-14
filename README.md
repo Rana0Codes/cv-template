@@ -146,7 +146,7 @@ Because **CV Template** is built with modern ES Modules and native web standards
 ### Option A: Local Dev Server with Hot Reload (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/username/cv-template.git
+git clone https://github.com/Rana0Codes/cv-template.git
 cd cv-template
 
 # Install dev dependencies (Vite & Puppeteer)

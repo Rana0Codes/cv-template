@@ -27,12 +27,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/cv-template.git"
+    "url": "https://github.com/Rana0Codes/cv-template.git"
   },
   "bugs": {
-    "url": "https://github.com/username/cv-template/issues"
+    "url": "https://github.com/Rana0Codes/cv-template/issues"
   },
-  "homepage": "https://github.com/username/cv-template#readme",
+  "homepage": "https://github.com/Rana0Codes/cv-template#readme",
   "devDependencies": {
     "puppeteer-core": "^25.10.0",
     "vite": "^8.3.0"

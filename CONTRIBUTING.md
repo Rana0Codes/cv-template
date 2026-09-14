@@ -21,7 +21,7 @@ All contributors are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT.md
 1. **Fork the repository** on GitHub.
 2. **Clone your fork**:
    ```bash
-   git clone https://github.com/<your-username>/cv-template.git
+   git clone https://github.com/Rana0Codes/cv-template.git
    cd cv-template
    ```
 3. **Install dev dependencies**:
